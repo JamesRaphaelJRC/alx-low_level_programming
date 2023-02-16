@@ -4,7 +4,7 @@
  * main - entry point
  * printf - Writes its argument on standard output i.e. the output stream
  *
- * Return - Always 0 (Success)
+ * Return:  Always 0 (Success)
  */
 int main(void)
 {
