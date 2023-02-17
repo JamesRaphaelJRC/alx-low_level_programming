@@ -4,7 +4,7 @@
 
 /**
  * main - assign a random number to the variable n each time the program is
- * executed and identified if number is positive, negative or zero
+ * executed and identify if the number is positive, negative or zero
  *
  * Return: 0 always (Successful)
  */
