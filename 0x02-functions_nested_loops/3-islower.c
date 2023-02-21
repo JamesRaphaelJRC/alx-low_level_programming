@@ -1,7 +1,8 @@
 #include "main.h"
 
 /**
- * _islower(int c) - Prints identifies lower and upper case characters.
+ * _islower - Prints identifies lower and upper case characters.
+ * @c: The character to identify.
  *
  * Return: 1 if letter is lower and 0 otherwise.
  */
