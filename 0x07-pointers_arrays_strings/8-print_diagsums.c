@@ -21,6 +21,5 @@ void print_diagsums(int *a, int size)
 				sec_diag += *(a + i * size + j);
 		}
 	}
-	printf("%d, ", main_diag);
-	printf("%d, \n", sec_diag);
+	printf("%d, %d\n", main_diag, sec_diag);
 }
