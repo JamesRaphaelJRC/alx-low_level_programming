@@ -20,6 +20,9 @@ int main(int argc, char *argv[])
 	}
 	cents = atoi(argv[1]);
 
+	if (cents < 0)
+		printf("0\n");
+
 	coins += cents / 25;
 	cents %= 25;
 	coins += cents / 10;
