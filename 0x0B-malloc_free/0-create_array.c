@@ -4,8 +4,8 @@
 /**
  * create_array - Creates an array of chars, and initializes it with a specific
  *			char.
- * size: Number of elements in the array.
- * c: The char to be used for initialization.
+ * @size: Number of elements in the array.
+ * @c: The char to be used for initialization.
  *
  * Return: A pointer to the array, NULL if it fails/ size is zero.
  */
