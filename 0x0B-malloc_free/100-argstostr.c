@@ -13,7 +13,7 @@ char *argstostr(int ac, char **av)
 	int i, j, k = 0, arg_len, tot_arg = 0;
 	char *str;
 
-	if (ac == 0|| av == NULL)
+	if (ac == 0 || av == NULL)
 		return (NULL);
 	for (i = 0; i < ac; i++)
 	{
@@ -22,12 +22,12 @@ char *argstostr(int ac, char **av)
 			arg_len++;
 		tot_arg += arg_len + 1;
 	}
-	str = malloc(tot_arg * sizeof(char));
+	str = (char *) malloc(tot_arg * sizeof(char));
 	if (str == NULL)
 		return (NULL);
 	for  (i = 0; i < ac; i++)
 	{
-		for(j = 0; av[i][j] != '\0'; j++)
+		for (j = 0; av[i][j] != '\0'; j++)
 		{
 			str[k] = av[i][j];
 			k++;
