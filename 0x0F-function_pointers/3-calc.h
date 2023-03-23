@@ -2,12 +2,6 @@
 #define __CALC_H__
 
 /**
- * file - Calc.h
- * Description: Contains all datatypes and prototypes used in the 3-main.c
- *		Program.
- */
-
-/**
  * struct op - Struct op
  *
  * @op: The operator
