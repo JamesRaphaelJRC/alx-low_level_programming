@@ -4,9 +4,10 @@
 /**
  * insert_nodeint_at_index - Inserts a node at a  give position.
  * @head: A listint_t pointer to the listint_t linked list.
+ * @idx: The index at which the new node will be inserted.
  * @n: The data to initialize the newnode to be inserted.
  *
- * @Return: A pointer to the newly inserted node.
+ * Return: A pointer to the newly inserted node.
  */
 listint_t *insert_nodeint_at_index(listint_t **head, unsigned int idx, int n)
 {
