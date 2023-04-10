@@ -23,9 +23,14 @@ int append_text_to_file(const char *filename, char *text_content)
 		for (count = 0; text_content[count];)
 			count++;
 	}
-	w = write(fd, text_content, count);
-	if (w == -1 || w != count)
+	if (text_content == NULL)
+		return (1);
+	else
+	{
+		w = write(fd, text_content, count);
+		if (w == -1 || w != count)
 		return (-1);
+	}
 
 	close(fd);
 
