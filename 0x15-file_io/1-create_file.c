@@ -18,7 +18,7 @@ int create_file(const char *filename, char *text_content)
 	while (text_content[count] != '\0')
 		count++;
 
-	fd = open(filename, O_WRONLY | O_CREAT, 0600);
+	fd = open(filename, (O_WRONLY && O_TRUNC) | O_CREAT, 0600);
 	w = write(fd, text_content, count);
 
 	if (fd == -1 || w == -1 || w != count)
