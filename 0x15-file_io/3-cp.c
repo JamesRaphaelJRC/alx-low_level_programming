@@ -34,14 +34,16 @@ int main(int argc, char *argv[])
 	if (fd1 == -1 || r == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from %s\n", f_from);
+		free(buffer);
 		exit(98);
 	}
 	c1 = close(fd1);
-	fd2 = open(f_to, O_WRONLY | O_TRUNC | O_CREAT, 0664);
+	fd2 = open(f_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
 	w = write(fd2, buffer, 1024);
 	if (fd2 == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
+		free(buffer);
 		exit(99);
 	}
 	c2 = close(fd2);
