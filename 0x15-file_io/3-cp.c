@@ -39,7 +39,7 @@ int main(int argc, char *argv[])
 	}
 	c1 = close(fd1);
 	fd2 = open(f_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	w = write(fd2, buffer, 1024);
+	w = write(fd2, buffer, r);
 	if (fd2 == -1 || w == -1)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", f_to);
