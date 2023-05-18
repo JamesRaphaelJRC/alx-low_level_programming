@@ -19,9 +19,6 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	}
 	tmp = head;
 
-	if (index >= tot_node)
-		return (NULL);
-
 	while (node_count < index)
 	{
 		tmp = tmp->next;
