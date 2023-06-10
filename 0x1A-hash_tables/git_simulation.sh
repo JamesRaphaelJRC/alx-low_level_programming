@@ -9,6 +9,10 @@
 # - A prompt to enter the commit message is put up and the git commit is performed
 # - git push operation is finally done
 
+if [ $# -eq 0 ]; then
+  echo "No argument provided"
+  exit 1
+fi
 
 filename=$1
 shift
