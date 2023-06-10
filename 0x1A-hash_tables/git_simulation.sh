@@ -14,7 +14,7 @@ filename=$1
 shift
 file_no=$#
 
-for ((i=0; i<=file_no; i++))
+for ((i=0; i<file_no; i++))
 do
     git add "${!i}"
 done
