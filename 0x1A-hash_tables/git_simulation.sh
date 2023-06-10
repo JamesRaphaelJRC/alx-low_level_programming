@@ -16,9 +16,8 @@ file_no=$#
 
 git add "$filename"
 
-for ((i=0; i<file_no; i++))
-do
-    git add "${!i}"
+for filename in "$@"; do
+    git add "$filename"
 done
 
 read -p "Enter a commit message: " message
