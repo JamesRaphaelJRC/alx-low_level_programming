@@ -13,8 +13,12 @@
  */
 int jump_search(int *array, size_t size, int value)
 {
-	size_t step = sqrt(size), ub, lb;
+	size_t step, ub, lb;
 
+	if (array == NULL || size < 1 || !value)
+		return (-1);
+
+	step = sqrt(size);
 	ub = lb = 0;
 
 	while (array[ub] < value && ub < size)
